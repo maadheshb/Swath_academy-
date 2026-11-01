@@ -3,1476 +3,679 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SWATH TUITION CENTER | Online Hindi Classes</title>
 
-<title>Swath Academy | Learn • Grow • Achieve</title>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="logo.png">
 
 <style>
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:"Poppins",sans-serif;
-}
-
-html{
-    scroll-behavior:smooth;
-}
-
-body{
-    background:#ffffff;
-    color:#24105d;
-}
-
-/* ================= HEADER ================= */
-
-header{
-    position:sticky;
-    top:0;
-    z-index:1000;
-    background:rgba(255,255,255,0.96);
-    backdrop-filter:blur(10px);
-    border-bottom:1px solid #eeeeee;
-}
-
-.navbar{
-    width:92%;
-    max-width:1200px;
-    margin:auto;
-    min-height:80px;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-}
-
-.logo{
-    width:190px;
-    height:auto;
-}
-
-.nav-links{
-    display:flex;
-    align-items:center;
-    gap:25px;
-}
-
-.nav-links a{
-    text-decoration:none;
-    color:#421080;
-    font-weight:600;
-    font-size:14px;
-    transition:0.3s;
-}
-
-.nav-links a:hover{
-    color:#20a148;
-}
-
-.nav-btn{
-    padding:11px 20px;
-    border-radius:30px;
-    background:linear-gradient(90deg,#54109c,#8b12c9);
-    color:white !important;
-}
-
-.menu{
-    display:none;
-    font-size:28px;
-    color:#50118e;
-    cursor:pointer;
-}
-
-/* ================= HERO ================= */
-
-.hero{
-    min-height:650px;
-    display:flex;
-    align-items:center;
-    background:
-    radial-gradient(circle at 85% 20%,#eadbff 0%,transparent 28%),
-    radial-gradient(circle at 5% 80%,#e1f7d5 0%,transparent 30%),
-    linear-gradient(180deg,#ffffff,#faf7ff);
-}
-
-.hero-container{
-    width:92%;
-    max-width:1200px;
-    margin:auto;
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    align-items:center;
-    gap:50px;
-}
-
-.hero-content small{
-    display:inline-block;
-    padding:9px 17px;
-    background:#eee1ff;
-    color:#6211a2;
-    border-radius:30px;
-    font-weight:700;
-    font-size:12px;
-    margin-bottom:18px;
-}
-
-.hero-content h1{
-    font-size:clamp(42px,6vw,72px);
-    line-height:1.05;
-    color:#470b8c;
-}
-
-.hero-content h1 span{
-    color:#219a48;
-}
-
-.hero-content p{
-    margin:22px 0;
-    color:#655d73;
-    line-height:1.8;
-    font-size:16px;
-    max-width:600px;
-}
-
-.buttons{
-    display:flex;
-    gap:12px;
-    flex-wrap:wrap;
-}
-
-.btn{
-    display:inline-block;
-    padding:14px 23px;
-    border-radius:30px;
-    text-decoration:none;
-    font-weight:700;
-    transition:0.3s;
-}
-
-.btn-primary{
-    color:white;
-    background:linear-gradient(90deg,#55109c,#8d12ce);
-    box-shadow:0 10px 25px rgba(90,15,160,0.2);
-}
-
-.btn-green{
-    color:white;
-    background:#209747;
-}
-
-.btn:hover{
-    transform:translateY(-3px);
-}
-
-/* Hero visual */
-
-.hero-image{
-    min-height:430px;
-    border-radius:40px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    background:linear-gradient(135deg,#eee1ff,#ffffff,#e3f8d7);
-    position:relative;
-    overflow:hidden;
-}
-
-.hero-image::before{
-    content:"";
-    position:absolute;
-    width:250px;
-    height:250px;
-    background:#d9c1f7;
-    border-radius:50%;
-    top:-100px;
-    right:-70px;
-}
-
-.hero-image::after{
-    content:"";
-    position:absolute;
-    width:220px;
-    height:220px;
-    background:#cdeebc;
-    border-radius:50%;
-    bottom:-90px;
-    left:-70px;
-}
-
-.laptop{
-    position:relative;
-    z-index:2;
-    width:72%;
-    height:250px;
-    background:#372078;
-    border:8px solid #25154e;
-    border-radius:18px;
-    box-shadow:0 25px 40px rgba(50,20,90,0.25);
-}
-
-.screen{
-    margin:8px;
-    height:180px;
-    border-radius:8px;
-    background:#f7f9ff;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:15px;
-}
-
-.screen-icon{
-    font-size:55px;
-}
-
-.screen-text{
-    color:#6110a5;
-    font-size:20px;
-    font-weight:800;
-}
-
-.laptop-base{
-    position:absolute;
-    width:120%;
-    height:16px;
-    bottom:-25px;
-    left:-10%;
-    background:#5d4a7c;
-    border-radius:0 0 15px 15px;
-}
-
-/* ================= COMMON ================= */
-
-section{
-    padding:80px 0;
-}
-
-.container{
-    width:92%;
-    max-width:1200px;
-    margin:auto;
-}
-
-.section-title{
-    text-align:center;
-    max-width:700px;
-    margin:0 auto 45px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
-.section-title span{
-    color:#8b14c9;
-    font-size:12px;
-    font-weight:800;
-    letter-spacing:2px;
-    text-transform:uppercase;
+body {
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+    color: #333;
+    line-height: 1.6;
 }
 
-.section-title h2{
-    color:#470b8c;
-    font-size:clamp(30px,4vw,45px);
-    margin:8px 0;
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 6%;
+    background: white;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-.section-title p{
-    color:#6b6279;
-    line-height:1.7;
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
-/* ================= FEATURES ================= */
-
-.features{
-    background:#faf7ff;
-}
-
-.feature-grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:22px;
-}
-
-.feature-card{
-    background:white;
-    padding:30px;
-    border-radius:25px;
-    text-align:center;
-    border:1px solid #eee5f8;
-    box-shadow:0 10px 30px rgba(60,15,100,0.06);
-}
-
-.feature-icon{
-    font-size:40px;
-    margin-bottom:12px;
-}
-
-.feature-card h3{
-    color:#4c108d;
-    margin-bottom:8px;
-}
-
-.feature-card p{
-    color:#70677d;
-    font-size:14px;
-    line-height:1.6;
+.logo-section img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
 }
 
-/* ================= COURSES ================= */
-
-.course-grid{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:20px;
-}
-
-.course-card{
-    padding:24px 18px;
-    border-radius:22px;
-    background:white;
-    border:1px solid #eeeeee;
-    box-shadow:0 10px 28px rgba(50,10,90,0.07);
-    transition:0.3s;
+.logo-section h2 {
+    font-size: 19px;
+    color: #642b91;
+    line-height: 1.2;
 }
 
-.course-card:hover{
-    transform:translateY(-7px);
-    box-shadow:0 18px 35px rgba(50,10,90,0.13);
+.logo-section span {
+    display: block;
+    font-size: 11px;
+    color: #249b58;
+    letter-spacing: 1px;
 }
 
-.course-icon{
-    font-size:45px;
-    margin-bottom:10px;
+nav {
+    display: flex;
+    gap: 22px;
 }
 
-.course-card h3{
-    color:#4b0e8b;
-    font-size:17px;
-    margin-bottom:8px;
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 14px;
 }
 
-.course-card p{
-    color:#625a70;
-    font-size:13px;
-    line-height:1.6;
-    min-height:63px;
+nav a:hover {
+    color: #249b58;
 }
 
-.price{
-    display:inline-block;
-    margin-top:15px;
-    padding:9px 18px;
-    border-radius:25px;
-    background:#6411aa;
-    color:white;
-    font-weight:800;
+/* HERO */
+.hero {
+    min-height: 570px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 70px 20px;
+    background: linear-gradient(120deg, #e5f8eb, #f1e5ff);
 }
 
-.course-card:nth-child(2) .price,
-.course-card:nth-child(8) .price{
-    background:#0785c7;
+.hero-content {
+    max-width: 800px;
 }
 
-.course-card:nth-child(3) .price{
-    background:#d61b88;
+.hero h1 {
+    font-size: 45px;
+    color: #61258c;
+    margin-bottom: 15px;
 }
 
-.course-card:nth-child(4) .price,
-.course-card:nth-child(6) .price{
-    background:#129b6e;
+.hero h1 span {
+    color: #239b55;
 }
-
-.course-card:nth-child(5) .price{
-    background:#f29a00;
-}
-
-/* ================= FEE ================= */
 
-.fee-section{
-    padding:30px 0 80px;
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+    color: #444;
 }
 
-.fee-box{
-    background:linear-gradient(110deg,#4b098a,#7610c2,#219846);
-    color:white;
-    padding:38px;
-    border-radius:30px;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:20px;
+.primary-btn {
+    display: inline-block;
+    background: #269b55;
+    color: white;
+    padding: 13px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 6px;
+    transition: 0.3s;
 }
 
-.fee-box h2{
-    font-size:32px;
+.primary-btn:hover {
+    background: #61258c;
+    transform: translateY(-3px);
 }
 
-.fee-box p{
-    margin-top:7px;
-    color:#eadcf8;
+.secondary-btn {
+    background: #642b91;
 }
 
-.fee-days{
-    color:#ffe500;
-    font-size:40px;
-    font-weight:800;
+/* COMMON SECTIONS */
+section {
+    padding: 75px 8%;
 }
 
-/* ================= ABOUT ================= */
-
-.about{
-    background:#faf8ff;
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    color: #642b91;
+    margin-bottom: 15px;
 }
 
-.about-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:50px;
-    align-items:center;
+.section-description {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 40px;
+    color: #666;
 }
 
-.about-card{
-    background:white;
-    padding:38px;
-    border-radius:28px;
-    border:1px solid #eee5f7;
-    box-shadow:0 15px 35px rgba(50,10,90,0.06);
+/* ABOUT */
+.about {
+    background: white;
 }
 
-.about-card h2{
-    color:#480c8d;
-    font-size:32px;
-    margin:8px 0 15px;
+.about-content {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+    font-size: 17px;
 }
 
-.about-card p{
-    color:#655d72;
-    line-height:1.8;
+/* COURSES */
+.courses {
+    background: #f7fff9;
 }
 
-.check-list{
-    margin-top:22px;
-    display:grid;
-    gap:13px;
+.course-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
 }
 
-.check{
-    font-size:14px;
-    font-weight:600;
+.course-card {
+    background: white;
+    padding: 30px 22px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+    border-bottom: 4px solid #269b55;
+    transition: 0.3s;
 }
 
-.check span{
-    color:#229848;
-    margin-right:8px;
+.course-card:hover {
+    transform: translateY(-8px);
 }
 
-.about-visual{
-    min-height:350px;
-    border-radius:35px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    background:linear-gradient(135deg,#e9ddff,#ffffff,#ddf6d1);
-    font-size:130px;
+.course-card .emoji {
+    font-size: 42px;
 }
 
-/* ================= FOUNDER ================= */
-
-.founder{
-    background:linear-gradient(135deg,#ffffff,#f4ffef);
+.course-card h3 {
+    color: #642b91;
+    margin: 12px 0;
 }
 
-.founder-grid{
-    display:grid;
-    grid-template-columns:380px 1fr;
-    gap:60px;
-    align-items:center;
+/* BENEFITS */
+.benefits {
+    background: linear-gradient(120deg, #f1e8ff, #e9f9ee);
 }
 
-.founder-photo-box{
-    position:relative;
+.benefit-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 850px;
+    margin: auto;
 }
 
-.founder-photo-box::before{
-    content:"";
-    position:absolute;
-    width:100px;
-    height:100px;
-    border-radius:50%;
-    background:#5fc74a;
-    left:-25px;
-    bottom:-20px;
-    z-index:0;
+.benefit-item {
+    background: white;
+    padding: 22px;
+    border-radius: 12px;
+    font-weight: bold;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.05);
 }
 
-.founder-photo-box::after{
-    content:"";
-    position:absolute;
-    width:80px;
-    height:80px;
-    border-radius:50%;
-    background:#7411b7;
-    right:-20px;
-    top:-20px;
-    z-index:0;
+.benefit-item span {
+    color: #269b55;
+    margin-right: 8px;
 }
 
-.founder-photo{
-    position:relative;
-    z-index:2;
-    width:100%;
-    display:block;
-    aspect-ratio:4/5;
-    object-fit:cover;
-    object-position:center top;
-    border-radius:30px;
-    border:7px solid white;
-    box-shadow:0 25px 50px rgba(50,15,90,0.18);
+/* ADMISSION */
+.admission {
+    background: white;
 }
 
-.founder-content span{
-    color:#8b14c9;
-    font-size:12px;
-    font-weight:800;
-    letter-spacing:2px;
-    text-transform:uppercase;
+.admission-form {
+    max-width: 650px;
+    margin: auto;
+    background: #f8fff9;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
 }
 
-.founder-content h2{
-    color:#450a8b;
-    font-size:42px;
-    line-height:1.15;
-    margin:10px 0;
+.admission-form input,
+.admission-form select,
+.admission-form textarea {
+    width: 100%;
+    padding: 13px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: inherit;
 }
 
-.founder-name{
-    color:#219747;
-    font-size:25px;
-    font-weight:800;
-    margin-bottom:17px;
+.admission-form input:focus,
+.admission-form select:focus,
+.admission-form textarea:focus {
+    outline: 2px solid #269b55;
+    border-color: transparent;
 }
 
-.founder-content p{
-    color:#625a70;
-    line-height:1.8;
-    margin-bottom:12px;
+.admission-form button {
+    width: 100%;
+    padding: 14px;
+    background: #269b55;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
 }
 
-.founder-tag{
-    display:inline-block;
-    margin-top:15px;
-    padding:10px 18px;
-    border-radius:25px;
-    background:white;
-    color:#55108f;
-    font-size:13px;
-    font-weight:700;
-    border:1px solid #e7dbf2;
+.admission-form button:hover {
+    background: #642b91;
 }
-
-/* ================= CONTACT ================= */
 
-.contact-box{
-    text-align:center;
-    padding:50px 25px;
-    border-radius:32px;
-    background:linear-gradient(135deg,#f1e7ff,#ffffff,#e9f9df);
-    border:1px solid #eadff4;
+.form-note {
+    text-align: center;
+    color: #666;
+    font-size: 13px;
+    margin-top: 12px;
 }
 
-.contact-box h2{
-    color:#470b8c;
-    font-size:38px;
-    margin:8px 0;
+/* CONTACT */
+.contact {
+    background: #f5f0fc;
+    text-align: center;
 }
 
-.contact-box p{
-    color:#665e73;
-    margin-bottom:25px;
+.contact-info {
+    margin: 20px 0;
+    font-size: 17px;
 }
 
-.contact-buttons{
-    display:flex;
-    justify-content:center;
-    gap:12px;
-    flex-wrap:wrap;
+.contact-info a {
+    color: #269b55;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-/* ================= FOOTER ================= */
-
-footer{
-    background:#2d075e;
-    color:white;
-    padding:40px 0 25px;
+.contact-buttons {
+    margin-top: 25px;
 }
 
-.footer-container{
-    width:92%;
-    max-width:1200px;
-    margin:auto;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    gap:25px;
+/* FOOTER */
+footer {
+    background: #292039;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
 }
 
-.footer-logo{
-    width:190px;
-    background:white;
-    padding:8px;
-    border-radius:10px;
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
 }
 
-.footer-text{
-    color:#cdbbe0;
-    font-size:12px;
-    margin-top:8px;
+.footer-logo img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
 }
 
-.social{
-    display:flex;
-    gap:10px;
-    flex-wrap:wrap;
+footer h3 {
+    color: #a9e8bb;
 }
 
-.social a{
-    text-decoration:none;
-    color:white;
-    border:1px solid #6b428e;
-    padding:9px 14px;
-    border-radius:20px;
-    font-size:12px;
+footer p {
+    font-size: 14px;
+    margin: 8px 0;
 }
 
-.copyright{
-    width:92%;
-    max-width:1200px;
-    margin:25px auto 0;
-    padding-top:20px;
-    border-top:1px solid #4d2671;
-    text-align:center;
-    color:#cdbbe0;
-    font-size:11px;
+footer a {
+    color: #b9f2c9;
+    text-decoration: none;
 }
-
-/* ================= MOBILE ================= */
-
-@media(max-width:900px){
 
-    .nav-links{
-        display:none;
-        position:absolute;
-        top:80px;
-        left:0;
-        right:0;
-        background:white;
-        padding:25px;
-        flex-direction:column;
-        box-shadow:0 15px 30px rgba(0,0,0,0.1);
+/* MOBILE RESPONSIVE */
+@media(max-width: 850px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
     }
 
-    .nav-links.active{
-        display:flex;
+    nav {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
     }
 
-    .menu{
-        display:block;
-    }
-
-    .hero-container{
-        grid-template-columns:1fr;
-    }
-
-    .hero-image{
-        min-height:350px;
-    }
-
-    .course-grid{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-    .about-grid,
-    .founder-grid{
-        grid-template-columns:1fr;
-    }
-
-    .founder-photo-box{
-        max-width:350px;
-        margin:auto;
-    }
-
-    .feature-grid{
-        grid-template-columns:1fr;
-    }
-
-    .fee-box{
-        text-align:center;
-        flex-direction:column;
-    }
-
-}
-
-@media(max-width:600px){
-
-    .logo{
-        width:160px;
-    }
-
-    .hero{
-        padding:55px 0;
-    }
-
-    .hero-image{
-        min-height:290px;
-    }
-
-    .laptop{
-        width:80%;
-        height:210px;
-    }
-
-    .screen{
-        height:150px;
-    }
-
-    .course-grid{
-        grid-template-columns:1fr;
-    }
-
-    .fee-box{
-        padding:28px 20px;
-    }
-
-    .fee-box h2{
-        font-size:26px;
-    }
-
-    .fee-days{
-        font-size:32px;
-    }
-
-    .founder-content h2{
-        font-size:32px;
-    }
-
-    .contact-box h2{
-        font-size:29px;
-    }
-
-    .footer-container{
-        flex-direction:column;
-        text-align:center;
-    }
-
-    .social{
-        justify-content:center;
+    .course-container {
+        grid-template-columns: 1fr 1fr;
     }
 }
 
+@media(max-width: 550px) {
+    .logo-section h2 {
+        font-size: 16px;
+    }
+
+    .logo-section img {
+        width: 48px;
+        height: 48px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .course-container,
+    .benefit-container {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        padding: 55px 6%;
+    }
+
+    .section-title {
+        font-size: 27px;
+    }
+
+    .admission-form {
+        padding: 20px;
+    }
+}
 </style>
 </head>
 
 <body>
 
-<!-- ================= HEADER ================= -->
-
+<!-- HEADER -->
 <header>
+    <div class="logo-section">
+        <img src="logo.png" alt="Swath Tuition Center Logo">
+        <h2>
+            SWATH TUITION CENTER
+            <span>ONLINE HINDI CLASSES</span>
+        </h2>
+    </div>
 
-<div class="navbar">
-
-<a href="#home">
-<img src="swath-logo.png" class="logo" alt="Swath Academy Logo">
-</a>
-
-<nav class="nav-links" id="navLinks">
-
-<a href="#home">Home</a>
-<a href="#courses">Courses</a>
-<a href="#about">About</a>
-<a href="#founder">Founder</a>
-<a href="#contact">Contact</a>
-
-<a href="#contact" class="nav-btn">
-Enroll Now
-</a>
-
-</nav>
-
-<div class="menu" onclick="toggleMenu()">
-☰
-</div>
-
-</div>
-
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#courses">Courses</a>
+        <a href="#benefits">Benefits</a>
+        <a href="#admission">Admission</a>
+        <a href="#contact">Contact</a>
+    </nav>
 </header>
 
-
-<!-- ================= HERO ================= -->
-
+<!-- HOME -->
 <section class="hero" id="home">
+    <div class="hero-content">
+        <h1>Learn Hindi <span>With Confidence!</span></h1>
 
-<div class="hero-container">
+        <p>
+            Welcome to SWATH TUITION CENTER.
+            Learn Hindi online from the basics to advanced level
+            with easy lessons and personal guidance.
+            Classes available for learners of all ages.
+        </p>
 
-<div class="hero-content">
-
-<small>
-A BRANCH OF THILLAI DATA TECH
-</small>
-
-<h1>
-Learn Online.<br>
-<span>Grow & Achieve.</span>
-</h1>
-
-<p>
-Build useful skills from anywhere, anytime.
-Swath Academy provides affordable online learning
-with practical courses designed for students,
-beginners and working learners.
-</p>
-
-<div class="buttons">
-
-<a href="#courses" class="btn btn-primary">
-Explore Courses →
-</a>
-
-<a href="https://wa.me/918903763714"
-target="_blank"
-class="btn btn-green">
-💬 WhatsApp Us
-</a>
-
-</div>
-
-</div>
-
-
-<div class="hero-image">
-
-<div class="laptop">
-
-<div class="screen">
-
-<div class="screen-icon">
-👩‍🏫
-</div>
-
-<div class="screen-text">
-ONLINE<br>
-CLASS
-</div>
-
-</div>
-
-<div class="laptop-base"></div>
-
-</div>
-
-</div>
-
-</div>
-
+        <a href="#courses" class="primary-btn">Explore Courses</a>
+        <a href="#admission" class="primary-btn secondary-btn">Join Now</a>
+    </div>
 </section>
 
-
-<!-- ================= FEATURES ================= -->
-
-<section class="features">
-
-<div class="container">
-
-<div class="section-title">
-
-<span>WHY SWATH ACADEMY?</span>
-
-<h2>
-Simple Learning. Real Skills.
-</h2>
-
-<p>
-Everything you need to start learning
-without making education complicated or expensive.
-</p>
-
-</div>
-
-
-<div class="feature-grid">
-
-<div class="feature-card">
-
-<div class="feature-icon">
-💻
-</div>
-
-<h3>
-Online Classes
-</h3>
-
-<p>
-Learn from anywhere, anytime with
-convenient online sessions.
-</p>
-
-</div>
-
-
-<div class="feature-card">
-
-<div class="feature-icon">
-💰
-</div>
-
-<h3>
-Low Cost
-</h3>
-
-<p>
-Quality education at an affordable
-price for learners.
-</p>
-
-</div>
-
-
-<div class="feature-card">
-
-<div class="feature-icon">
-📅
-</div>
-
-<h3>
-15 Learning Days
-</h3>
-
-<p>
-Courses are designed to be completed
-in just 15 learning days.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- ================= COURSES ================= -->
-
-<section id="courses">
-
-<div class="container">
-
-<div class="section-title">
-
-<span>OUR COURSES</span>
-
-<h2>
-Choose Your Skill
-</h2>
-
-<p>
-All courses are available online.
-Learn a practical skill in just 15 learning days.
-</p>
-
-</div>
-
-
-<div class="course-grid">
-
-
-<div class="course-card">
-
-<div class="course-icon">
-📊
-</div>
-
-<h3>
-Data Analyst
-</h3>
-
-<p>
-Turn data into meaningful insights
-and make better decisions.
-</p>
-
-<span class="price">
-₹3,000
-</span>
-
-</div>
-
-
-<div class="course-card">
-
-<div class="course-icon">
-💻
-</div>
-
-<h3>
-Web Development
-</h3>
-
-<p>
-Build modern websites and bring
-your ideas to life.
-</p>
-
-<span class="price">
-₹3,000
-</span>
-
-</div>
-
-
-<div class="course-card">
-
-<div class="course-icon">
-📣
-</div>
-
-<h3>
-Digital Marketing
-</h3>
-
-<p>
-Grow brands, reach more people
-and turn clicks into customers.
-</p>
-
-<span class="price">
-₹3,000
-</span>
-
-</div>
-
-
-<div class="course-card">
-
-<div class="course-icon">
-🎙️
-</div>
-
-<h3>
-Spoken English
-</h3>
-
-<p>
-Speak confidently, express yourself
-and open new opportunities.
-</p>
-
-<span class="price">
-₹3,000
-</span>
-
-</div>
-
-
-<div class="course-card">
-
-<div class="course-icon">
-📖
-</div>
-
-<h3>
-Hindi Language
-</h3>
-
-<p>
-Learn Hindi from basics to fluency
-with easy methods.
-</p>
-
-<span class="price">
-₹3,000
-</span>
-
-</div>
-
-
-<div class="course-card">
-
-<div class="course-icon">
-📚
-</div>
-
-<h3>
-Tamil Language
-</h3>
-
-<p>
-Build your Tamil reading, writing
-and speaking skills.
-</p>
-
-<span class="price">
-₹3,000
-</span>
-
-</div>
-
-
-<div class="course-card">
-
-<div class="course-icon">
-🖥️
-</div>
-
-<h3>
-Computer Basics
-</h3>
-
-<p>
-Get comfortable with computers
-and essential everyday tools.
-</p>
-
-<span class="price">
-₹3,000
-</span>
-
-</div>
-
-
-<div class="course-card">
-
-<div class="course-icon">
-📎
-</div>
-
-<h3>
-Office Tools
-</h3>
-
-<p>
-Work smarter with MS Word,
-Excel and PowerPoint.
-</p>
-
-<span class="price">
-₹3,000
-</span>
-
-</div>
-
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- ================= FEE ================= -->
-
-<section class="fee-section">
-
-<div class="container">
-
-<div class="fee-box">
-
-<div>
-
-<h2>
-All Courses Only ₹3,000
-</h2>
-
-<p>
-Per course • Online Classes • Affordable Learning
-</p>
-
-</div>
-
-<div class="fee-days">
-15 DAYS
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- ================= ABOUT ================= -->
-
+<!-- ABOUT -->
 <section class="about" id="about">
+    <h2 class="section-title">About Us</h2>
 
-<div class="container">
+    <p class="section-description">
+        Making Hindi learning simple, comfortable and enjoyable.
+    </p>
 
-<div class="about-grid">
+    <div class="about-content">
+        <p>
+            SWATH TUITION CENTER provides online Hindi classes
+            for children, students, adults and beginners.
+            Our aim is to help every learner understand,
+            read, write and speak Hindi with confidence.
+        </p>
 
-<div class="about-card">
-
-<span style="color:#8b14c9;font-weight:800;font-size:12px;letter-spacing:2px;">
-ABOUT US
-</span>
-
-<h2>
-Better Skills, Brighter Future
-</h2>
-
-<p>
-Swath Academy is an online learning academy
-focused on making useful skills accessible
-at a low cost.
-</p>
-
-<p style="margin-top:12px;">
-We help learners develop practical knowledge
-and confidence through focused short-duration
-courses.
-</p>
-
-
-<div class="check-list">
-
-<div class="check">
-<span>✓</span>
-Online learning from anywhere
-</div>
-
-<div class="check">
-<span>✓</span>
-Affordable course fee
-</div>
-
-<div class="check">
-<span>✓</span>
-15 learning days for all courses
-</div>
-
-<div class="check">
-<span>✓</span>
-Multiple career and language skills
-</div>
-
-</div>
-
-</div>
-
-
-<div class="about-visual">
-🎓
-</div>
-
-</div>
-
-</div>
-
+        <p style="margin-top:15px;">
+            Whether you are starting from zero or improving
+            your existing Hindi knowledge, you can choose
+            a learning level that suits you.
+        </p>
+    </div>
 </section>
 
+<!-- COURSES -->
+<section class="courses" id="courses">
+    <h2 class="section-title">Our Courses</h2>
 
-<!-- ================= FOUNDER ================= -->
+    <p class="section-description">
+        Choose the right Hindi learning level for you.
+    </p>
 
-<section class="founder" id="founder">
+    <div class="course-container">
 
-<div class="container">
+        <div class="course-card">
+            <div class="emoji">🌱</div>
+            <h3>Beginner Level</h3>
+            <p>
+                Hindi alphabets, basic words,
+                pronunciation and simple sentences.
+            </p>
+        </div>
 
-<div class="founder-grid">
+        <div class="course-card">
+            <div class="emoji">📚</div>
+            <h3>Intermediate Level</h3>
+            <p>
+                Vocabulary development, grammar,
+                sentence formation and conversations.
+            </p>
+        </div>
 
+        <div class="course-card">
+            <div class="emoji">🎓</div>
+            <h3>Advanced Level</h3>
+            <p>
+                Advanced grammar, fluent speaking,
+                reading and writing practice.
+            </p>
+        </div>
 
-<div class="founder-photo-box">
-
-<img
-src="founder.png"
-alt="Maadhesh B - Founder of Swath Academy & Thillai Data Tech"
-class="founder-photo">
-
-</div>
-
-
-<div class="founder-content">
-
-<span>
-MEET THE FOUNDER
-</span>
-
-<h2>
-Building Skills for a
-Brighter Future
-</h2>
-
-<div class="founder-name">
-Maadhesh B
-</div>
-
-<p>
-Founder of Swath Academy & Thillai Data Tech.
-</p>
-
-<p>
-Swath Academy is built with a simple vision:
-make practical, career-focused learning
-accessible to everyone through affordable
-online courses.
-</p>
-
-<p>
-With Swath Academy, learners can develop
-useful skills, improve confidence and take
-their next step toward a brighter future.
-</p>
-
-<div class="founder-tag">
-🎓 Founder • Swath Academy & Thillai Data Tech
-</div>
-
-</div>
-
-</div>
-
-</div>
-
+    </div>
 </section>
 
+<!-- BENEFITS -->
+<section class="benefits" id="benefits">
+    <h2 class="section-title">Why Choose Us?</h2>
 
-<!-- ================= CONTACT ================= -->
+    <p class="section-description">
+        Learn at your own pace in a comfortable online environment.
+    </p>
 
-<section id="contact">
+    <div class="benefit-container">
 
-<div class="container">
+        <div class="benefit-item">
+            <span>✔</span> Online Learning
+        </div>
 
-<div class="contact-box">
+        <div class="benefit-item">
+            <span>✔</span> Classes for All Ages
+        </div>
 
-<div style="color:#8b14c9;font-size:12px;font-weight:800;letter-spacing:2px;">
-ADMISSIONS OPEN
-</div>
+        <div class="benefit-item">
+            <span>✔</span> Beginner-Friendly Lessons
+        </div>
 
-<h2>
-Ready to Learn a New Skill?
-</h2>
+        <div class="benefit-item">
+            <span>✔</span> Personal Learning Guidance
+        </div>
 
-<p>
-Contact Swath Academy for course details
-and admission enquiries.
-</p>
+        <div class="benefit-item">
+            <span>✔</span> Flexible Learning
+        </div>
 
+        <div class="benefit-item">
+            <span>✔</span> Speaking and Writing Practice
+        </div>
 
-<div class="contact-buttons">
-
-<a
-href="https://wa.me/918903763714?text=Hi%20Swath%20Academy%2C%20I%20want%20course%20details."
-target="_blank"
-class="btn btn-primary">
-
-💬 WhatsApp: 8903763714
-
-</a>
-
-
-<a
-href="tel:+918903763714"
-class="btn btn-green">
-
-📞 Call Now
-
-</a>
-
-
-<a
-href="https://instagram.com/swath_academy"
-target="_blank"
-class="btn"
-style="border:2px solid #6411a9;color:#6411a9;">
-
-📷 @swath_academy
-
-</a>
-
-</div>
-
-</div>
-
-</div>
-
+    </div>
 </section>
 
+<!-- ADMISSION -->
+<section class="admission" id="admission">
+    <h2 class="section-title">Admission Form</h2>
 
-<!-- ================= FOOTER ================= -->
+    <p class="section-description">
+        Interested in learning Hindi? Submit your details through WhatsApp.
+    </p>
 
+    <form class="admission-form" id="admissionForm">
+
+        <input type="text" id="studentName"
+        placeholder="Student Name" required>
+
+        <input type="tel" id="phone"
+        placeholder="Contact Number" required>
+
+        <input type="email" id="email"
+        placeholder="Email Address">
+
+        <input type="number" id="age"
+        placeholder="Student Age" min="1" required>
+
+        <select id="ageGroup" required>
+            <option value="">Select Age Group</option>
+            <option>Below 13 Years</option>
+            <option>13–18 Years</option>
+            <option>19–30 Years</option>
+            <option>Above 30 Years</option>
+        </select>
+
+        <select id="level" required>
+            <option value="">Select Course Level</option>
+            <option>Beginner</option>
+            <option>Intermediate</option>
+            <option>Advanced</option>
+        </select>
+
+        <textarea id="message"
+        rows="4"
+        placeholder="Additional Information (Optional)"></textarea>
+
+        <button type="submit">
+            Submit Application on WhatsApp
+        </button>
+
+        <p class="form-note">
+            Your application details will be prepared in WhatsApp.
+            Press Send there to submit your application.
+        </p>
+
+    </form>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+    <h2 class="section-title">Contact Us</h2>
+
+    <p class="section-description">
+        Have questions about our Hindi classes?
+        Contact us directly.
+    </p>
+
+    <div class="contact-info">
+        <p>📧 Email:
+            <a href="mailto:swathtuitioncenter@gmail.com">
+                swathtuitioncenter@gmail.com
+            </a>
+        </p>
+
+        <p>📱 WhatsApp:
+            <a href="https://wa.me/918903763714" target="_blank">
+                +91 8903763714
+            </a>
+        </p>
+    </div>
+
+    <div class="contact-buttons">
+        <a class="primary-btn"
+        href="https://wa.me/918903763714"
+        target="_blank">
+            Chat on WhatsApp
+        </a>
+
+        <a class="primary-btn secondary-btn"
+        href="mailto:swathtuitioncenter@gmail.com">
+            Send Email
+        </a>
+    </div>
+</section>
+
+<!-- FOOTER -->
 <footer>
 
-<div class="footer-container">
+    <div class="footer-logo">
+        <img src="logo.png" alt="Swath Tuition Center Logo">
+        <h3>SWATH TUITION CENTER</h3>
+    </div>
 
-<div>
+    <p>Learn Hindi. Build Confidence. Grow Together.</p>
 
-<img
-src="swath-logo.png"
-alt="Swath Academy"
-class="footer-logo">
+    <p>
+        Email:
+        <a href="mailto:swathtuitioncenter@gmail.com">
+            swathtuitioncenter@gmail.com
+        </a>
+    </p>
 
-<div class="footer-text">
-A Branch of Thillai Data Tech
-</div>
-
-</div>
-
-
-<div class="social">
-
-<a
-href="https://instagram.com/swath_academy"
-target="_blank">
-Instagram
-</a>
-
-<a
-href="https://wa.me/918903763714"
-target="_blank">
-WhatsApp
-</a>
-
-<a href="#courses">
-Courses
-</a>
-
-</div>
-
-</div>
-
-
-<div class="copyright">
-
-© 2026 Swath Academy. All Rights Reserved.
-
-</div>
+    <p>© 2026 SWATH TUITION CENTER. All Rights Reserved.</p>
 
 </footer>
 
-
-<!-- ================= JAVASCRIPT ================= -->
-
+<!-- WHATSAPP ADMISSION SCRIPT -->
 <script>
+document.getElementById("admissionForm")
+.addEventListener("submit", function(event) {
 
-function toggleMenu(){
+    event.preventDefault();
 
-    const nav = document.getElementById("navLinks");
+    const name = document.getElementById("studentName").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const age = document.getElementById("age").value;
+    const ageGroup = document.getElementById("ageGroup").value;
+    const level = document.getElementById("level").value;
+    const message = document.getElementById("message").value.trim();
 
-    nav.classList.toggle("active");
+    const whatsappMessage =
+`Hello SWATH TUITION CENTER!
 
-}
+I would like to apply for your online Hindi classes.
 
-document.querySelectorAll(".nav-links a").forEach(function(link){
+Student Name: ${name}
+Contact Number: ${phone}
+Email: ${email || "Not provided"}
+Age: ${age}
+Age Group: ${ageGroup}
+Course Level: ${level}
+Additional Information: ${message || "None"}
 
-    link.addEventListener("click",function(){
+Please share the admission details. Thank you!`;
 
-        if(window.innerWidth <= 900){
+    const whatsappURL =
+        "https://wa.me/918903763714?text=" +
+        encodeURIComponent(whatsappMessage);
 
-            document.getElementById("navLinks")
-            .classList.remove("active");
-
-        }
-
-    });
-
+    window.open(whatsappURL, "_blank");
 });
-
 </script>
 
 </body>
